@@ -1,1 +1,12 @@
-<pre>Hello world</pre>
+<sly data-sly-test.hasType="${properties.productType}">
+    <pre>This product is a: ${properties.productType}</pre>
+    <pre>Specs</pre>
+    <pre data-sly-test="${properties.productType == 'phone' && properties.os}">Operating system: ${properties.os}</pre>
+    <pre data-sly-test="${properties.productType == 'phone' && properties.camera}">Camera: ${properties.camera}</pre>
+    <pre data-sly-test="${properties.productType == 'laptop' && properties.screenSize}">Screen size: ${properties.screenSize}</pre>
+    <pre data-sly-test="${properties.productType == 'laptop' && properties.keyboardLayout}">Keyboard layout: ${properties.keyboardLayout}</pre>
+    <pre data-sly-test="${properties.productType == 'tv' && properties.hdr}">Supports HDR: ${properties.hdr}</pre>
+    <pre data-sly-test="${properties.productType == 'tv' && !properties.hdr}">Supports HDR: false</pre>
+    <pre data-sly-test="${properties.productType == 'tv' && properties.resolution}">Resolution: ${properties.resolution}</pre>
+</sly>
+<pre data-sly-test="${!hasType}">No product selected</pre>
