@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <productType
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Type"
+                        name="./productType">
+                        <items jcr:primaryType="nt:unstructured">
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                text="Phone"
+                                value="phone"/>
+                            <laptop
+                                jcr:primaryType="nt:unstructured"
+                                text="Laptop"
+                                value="laptop"/>
+                            <tv
+                                jcr:primaryType="nt:unstructured"
+                                text="TV screen"
+                                value="tv"/>
+                        </items>
+                    </productType>
+                    <phone
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <os
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Operating system"
+                                name="./os">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <ios
+                                        jcr:primaryType="nt:unstructured"
+                                        text="iOS"
+                                        value="iOS"/>
+                                    <android
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Laptop"
+                                        value="laptop"/>
+                                </items>
+                            </os>
+                            <camera
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Camera"
+                                name="./camera"/>
+                        </items>
+                    </phone>
+                    <laptop
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <screenSize
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                fieldLabel="Screen size (inches)"
+                                name="./screenSize"/>
+                            <keyboardLayout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Keyboard Layout"
+                                name="./keyboardLayout">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <qwertz
+                                        jcr:primaryType="nt:unstructured"
+                                        text="QWERTZ"
+                                        value="qwertz"/>
+                                    <azerty
+                                        jcr:primaryType="nt:unstructured"
+                                        text="AZERTY"
+                                        value="azerty"/>
+                                </items>
+                            </keyboardLayout>
+                        </items>
+                    </laptop>
+                    <tv
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <hdr
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldLabel="Supports HDR"
+                                name="./hdr"
+                                text="Supports HDR"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <resolution
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Resolution"
+                                name="./resolution">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <hd
+                                        jcr:primaryType="nt:unstructured"
+                                        text="HD (1080p)"
+                                        value="hd"/>
+                                    <uhd
+                                        jcr:primaryType="nt:unstructured"
+                                        text="UHD (4k)"
+                                        value="uhd"/>
+                                </items>
+                            </resolution>
+                        </items>
+                    </tv>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

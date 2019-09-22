@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Content-Package-Roots: /apps/tp/components/content/dynamicComponent
+Content-Package-Type: application
+Content-Package-Id: Tutorials:dynamic-dialog-fields:step-1
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>FileVault Package Properties</comment>
+<entry key="createdBy">admin</entry>
+<entry key="name">dynamic-dialog-fields</entry>
+<entry key="lastModified">2019-09-22T10:52:03.763+02:00</entry>
+<entry key="lastModifiedBy">admin</entry>
+<entry key="created">2019-09-22T10:52:03.790+02:00</entry>
+<entry key="buildCount">6</entry>
+<entry key="version">step-1</entry>
+<entry key="packageType">application</entry>
+<entry key="dependencies"/>
+<entry key="packageFormatVersion">2</entry>
+<entry key="description"/>
+<entry key="lastWrapped">2019-09-22T10:52:03.763+02:00</entry>
+<entry key="group">Tutorials</entry>
+<entry key="lastWrappedBy">admin</entry>
+</properties>
